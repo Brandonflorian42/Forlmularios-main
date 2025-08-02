@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align:center; margin-top:30px;">
+      <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Spotify Logo" width="180"/>
+    </div>
+    <h2 style="text-align:center;">Registro Spotify</h2>
+    <form action="#" style="max-width:400px; margin:auto;">
+      <fieldset>
+        <legend>Datos de la cuenta</legend>
+        <div style="margin-bottom:10px;">
+          <label for="usuario">Nombre de usuario:</label><br>
+          <input type="text" id="usuario" name="usuario" required>
+        </div>
+        <div style="margin-bottom:10px;">
+          <label for="email">Correo electrónico:</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div style="margin-bottom:10px;">
+          <label for="pass">Contraseña:</label><br>
+          <input type="password" id="pass" name="pass" minlength="8" required>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Preferencias musicales</legend>
+        <div style="margin-bottom:10px;">
+          <label for="genero">Género favorito:</label><br>
+          <select id="genero" name="genero" required>
+            <option value="">--Selecciona uno--</option>
+            <option value="pop">Pop</option>
+            <option value="rock">Rock</option>
+            <option value="reggaeton">Reggaetón</option>
+            <option value="clasica">Clásica</option>
+            <option value="jazz">Jazz</option>
+            <option value="electronica">Electrónica</option>
+          </select>
+        </div>
+        <div style="margin-bottom:10px;">
+          <label for="comentario">¿Por qué te gusta la música?</label><br>
+          <textarea id="comentario" name="comentario" rows="3" cols="35" placeholder="Cuéntanos..." required></textarea>
+        </div>
+        <div style="margin-bottom:10px;">
+          <input type="checkbox" id="novedades" name="novedades">
+          <label for="novedades">Quiero recibir novedades y ofertas</label>
+        </div>
+      </fieldset>
+      <div style="text-align:center; margin-top:15px;">
+        <button type="submit">Registrarse</button>
+        <button type="reset">Borrar</button>
+      </div>
+    </form>
+</body>
+</html>
